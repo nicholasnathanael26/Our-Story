@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavigationActivity">
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.ourstory.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.ourstory.PopupOverlay"
+
+        />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:background="@color/white"
+        >
+
+        <SearchView
+            android:id="@+id/nav_search"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:queryHint="Search"
+            android:background="@drawable/round_search"
+            android:layout_centerInParent="true"
+            />
+
+        <!--            <com.google.android.material.bottomnavigation.BottomNavigationView-->
+        <!--                android:id="@+id/nav_searchs"-->
+        <!--                android:layout_width="200dp"-->
+        <!--                android:layout_height="35dp"-->
+        <!--                app:menu="@menu/nav_search"-->
+        <!--                android:layout_centerInParent="true"-->
+        <!--            />-->
+
+
+
+    </RelativeLayout>
+    <include layout="@layout/content_main" />
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/fragment_container"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        />-->
+
+<!--    <include-->
+<!--        layout="@layout/item_cardview_book" />-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
